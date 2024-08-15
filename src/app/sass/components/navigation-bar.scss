@@ -1,4 +1,18 @@
 .navigation-bar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 0 6.4rem;
+    &__logo {
+        font-feature-settings: "calt" off;
+        font-family: Anton;
+        font-size: 4.8rem;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: -0.4.8rem;
+    }
+    &__menu {
+        display: flex;
+        gap: 4.8rem;
+    }
 }

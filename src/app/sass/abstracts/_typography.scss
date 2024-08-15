@@ -1,3 +1,4 @@
+@use "colors" as *;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 h1 {
@@ -51,6 +52,35 @@ h6 {
     line-height: 155.56%;
     text-decoration: none;
     letter-spacing: 0rem;
+}
+
+a {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8rem; /* 112.5% */
+    position: relative;
+    color: $text-white;
+    text-transform: uppercase;
+    &:link,
+    :visited {
+        color: $text-white;
+        text-decoration: none;
+    }
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -0.6rem;
+        width: 0;
+        height: 3px;
+        background-color: $background-secondary;
+        transition: width 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    &:hover::before {
+        width: 100%;
+    }
 }
 
 .subtitle-1 {

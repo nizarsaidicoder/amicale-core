@@ -1,4 +1,5 @@
 import "../sass/index.scss";
+import Button from "./Button";
 function NavigationBar() {
     return (
         <div className="navigation-bar">
@@ -11,11 +12,7 @@ function NavigationBar() {
                 <a href="#">Contact</a>
             </div>
             <div className="navigation-bar__buttons">
-                <a
-                    href="#"
-                    className="button-primary">
-                    Contactez Nous
-                </a>
+                <Button type="primary">Contactez Nous</Button>
             </div>
         </div>
     );
