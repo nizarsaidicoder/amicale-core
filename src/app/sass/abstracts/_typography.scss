@@ -75,23 +75,13 @@ a {
         bottom: -0.6rem;
         width: 0;
         height: 3px;
-        background-color: $background-secondary;
+        background-color: $background-white;
         transition: width 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
     &:hover::before {
         width: 100%;
     }
 }
-
-.subtitle-1 {
-    font-family: "Montserrat", "Arial", sans-serif;
-    font-weight: 600;
-    font-size: 1.6rem;
-    line-height: 150%;
-    text-decoration: none;
-    letter-spacing: 0rem;
-}
-
 .subtitle-2 {
     font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 600;
@@ -103,7 +93,7 @@ a {
 
 .text-1 {
     font-family: "Montserrat", "Arial", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.6rem;
     line-height: 150%;
     text-decoration: none;

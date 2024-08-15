@@ -1,0 +1,36 @@
+@use "../abstracts" as *;
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.4rem;
+    align-items: center;
+    position: relative;
+    margin: 0 6.4rem;
+    padding: 12rem 0;
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2.4rem;
+        & > p {
+            max-width: 80rem;
+            text-align: center;
+        }
+    }
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1.6rem;
+    }
+    &__background {
+        position: absolute;
+        height: 100rem !important;
+        z-index: -1;
+    }
+}
+.back {
+    background-color: $background-secondary;
+    height: 100rem;
+}

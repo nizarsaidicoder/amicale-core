@@ -16,7 +16,15 @@
         &:hover {
             background-color: $background-primary;
             color: $text-white;
-            border: 1px solid $background-white;
+            border: 2px solid $background-white;
+        }
+    }
+    &--secondary {
+        background-color: transparent;
+        color: $text-white;
+        border: 2px solid $text-white;
+        &:hover {
+            background-color: $background-secondary;
         }
     }
 }
