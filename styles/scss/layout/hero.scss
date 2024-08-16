@@ -26,11 +26,8 @@
     }
     &__background {
         position: absolute;
-        height: 100rem !important;
-        z-index: -1;
+        height: 80rem;
+        top: 10%;
+        z-index: -100;
     }
-}
-.back {
-    background-color: $background-secondary;
-    height: 100rem;
 }
