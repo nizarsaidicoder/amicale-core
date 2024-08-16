@@ -1,0 +1,18 @@
+@use "../abstracts/" as *;
+@use "../utilities" as *;
+.section-membres {
+    padding: 6.4rem 6.4rem;
+    background-color: $background-secondary;
+    h2 {
+        @include highlight(
+            $background-primary,
+            polygon(2% 0, 100% 0, 98% 100%, 0% 100%)
+        );
+    }
+}
+.profiles {
+    display: flex;
+    gap: 6.4rem;
+    flex-wrap: wrap;
+    margin: 6.4rem auto;
+}
