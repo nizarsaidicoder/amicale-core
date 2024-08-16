@@ -1,11 +1,10 @@
 @use "../abstracts/" as *;
 @use "../utilities" as *;
-.about-section {
+.mission-section {
     padding: 6.4rem 6.4rem;
-    background-color: $background-secondary;
     h2 {
         @include highlight(
-            $background-primary,
+            $background-secondary,
             polygon(2% 0, 100% 0, 98% 100%, 0% 100%)
         );
     }
@@ -26,11 +25,11 @@
         }
     }
 }
-.about-row {
+.mission-row {
     &__image {
         position: relative;
         max-width: 40%;
-        box-shadow: $background-primary 1rem 1rem 0px;
+        box-shadow: $background-secondary 1rem 1rem 0px;
     }
     &__text {
         max-width: 70rem;
@@ -39,7 +38,7 @@
         align-items: flex-start;
         gap: 2.4rem;
         h3 {
-            @include highlight;
+            @include highlight($background-secondary);
         }
     }
 }
