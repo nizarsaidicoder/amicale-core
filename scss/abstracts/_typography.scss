@@ -70,7 +70,6 @@ a {
 .link {
     text-transform: uppercase;
     color: $text-white;
-
     &::before {
         content: "";
         display: block;
