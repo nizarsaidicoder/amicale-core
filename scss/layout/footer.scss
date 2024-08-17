@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+@use "../utilities" as *;
+.footer {
+    background-color: $background-secondary;
+    display: flex;
+    flex-direction: column;
+    padding: 3.2rem 6.4rem;
+    &__logo {
+        font-family: Anton;
+        font-size: 3.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 6.6rem;
+    }
+    &__content {
+        display: flex;
+        gap: 2.4rem;
+        justify-content: space-between;
+        font-weight: 500;
+    }
+    &__menu {
+        display: flex;
+        gap: 2.4rem;
+    }
+}

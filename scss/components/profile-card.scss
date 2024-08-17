@@ -14,13 +14,13 @@
     box-shadow: $background-primary 0.5rem 0.5rem 0px;
     transition: all 0.3s;
     &:hover {
-        .profile-card__image {
-            transform: scale(1.1);
-        }
         background-color: $background-primary;
         color: $background-white;
         transform: translate(0, -0.5rem);
         border: gold 2px solid;
+        .profile-card__image {
+            transform: scale(1.1);
+        }
         .profile-card__contact li a img {
             filter: invert(1);
         }

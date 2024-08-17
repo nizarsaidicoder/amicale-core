@@ -1,4 +1,9 @@
 @use "../abstracts/" as *;
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 .navigation-bar {
     display: flex;
     justify-content: space-between;
@@ -6,6 +11,9 @@
     padding: 0.4rem 6.4rem;
     margin-bottom: 6.4rem;
     background-color: $background-secondary;
+    border-bottom: 2px solid $background-primary;
+    box-shadow: 0px 4px 0px $background-primary;
+
     &__logo {
         font-family: Anton;
         font-size: 3.8rem;

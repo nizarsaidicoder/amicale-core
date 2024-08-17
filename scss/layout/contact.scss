@@ -90,7 +90,7 @@
                 #5621b8,
                 $background-secondary
             );
-            animation: rotate 8s infinite;
+            animation: rotate 18s infinite;
         }
         &--2 {
             background-image: linear-gradient(
@@ -98,7 +98,7 @@
                 #ffffff,
                 #5921b9
             );
-            animation: rotate 9s infinite;
+            animation: rotate 19s infinite;
             animation-delay: 1s;
         }
         &--3 {
@@ -107,7 +107,7 @@
                 #adb6ce,
                 $background-secondary
             );
-            animation: rotate 10s infinite;
+            animation: rotate 20s infinite;
             animation-delay: 2s;
         }
     }
