@@ -9,20 +9,20 @@
     border-radius: 0.4rem;
     border: none;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.2s ease-in;
     &--primary {
         background-color: $background-white;
         color: $text-black;
         &:hover {
             background-color: $background-primary;
             color: $text-white;
-            border: 2px solid $background-white;
+            outline: 2px solid $background-white;
         }
     }
     &--secondary {
         background-color: transparent;
         color: $text-white;
-        border: 2px solid $text-white;
+        outline: 2px solid $text-white;
         &:hover {
             background-color: $background-secondary;
         }
