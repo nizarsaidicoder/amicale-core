@@ -15,7 +15,7 @@
         color: $text-black !important;
         &:hover {
             background-color: $background-primary;
-            color: $text-white;
+            color: $text-white !important;
             outline: 2px solid $background-white;
         }
     }
@@ -29,13 +29,30 @@
     }
 }
 
+@media (max-width: $lg-screen) {
+    .button {
+        padding: 0.6rem 1.2rem;
+    }
+}
+
 @media (max-width: $md-screen) {
     .button {
         font-size: 1.4rem;
+        padding: 0.5rem 1rem;
     }
 }
+
 @media (max-width: $sm-screen) {
     .button {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        padding: 0rem 0.8rem;
+    }
+}
+
+@media (max-width: $xs-screen) {
+    .button {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+        padding: 0.3rem 0.8rem;
     }
 }
