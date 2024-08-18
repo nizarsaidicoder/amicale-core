@@ -94,6 +94,7 @@
 @media (max-width: $sm-screen) {
     .about-section {
         padding: 2.4rem 3.2rem;
+        margin-bottom: 4.2rem;
         &__content {
             gap: 3.2rem;
         }
@@ -107,7 +108,7 @@
     }
     .about-row {
         &__image {
-            max-width: 100%;
+            max-width: 50%;
         }
         &__text {
             max-width: 100%;
