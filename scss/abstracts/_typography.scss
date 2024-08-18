@@ -1,4 +1,5 @@
 @use "colors" as *;
+@use "media-queries" as *;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 h1 {
@@ -85,15 +86,6 @@ a {
     }
 }
 
-.subtitle-2 {
-    font-family: "Montserrat", "Arial", sans-serif;
-    font-weight: 600;
-    font-size: 1.4rem;
-    line-height: 157.14%;
-    text-decoration: none;
-    letter-spacing: 0rem;
-}
-
 .text-1 {
     font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 500;
@@ -121,14 +113,6 @@ a {
     letter-spacing: 0rem;
 }
 
-.overline {
-    font-family: "Montserrat", "Arial", sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 90%;
-    text-decoration: none;
-    letter-spacing: 0rem;
-}
 .heading-primary {
     font-family: "Anton", "Montserrat", sans-serif;
     text-align: center;
@@ -157,4 +141,108 @@ a {
     line-height: 6.4rem;
     text-transform: uppercase;
     display: inline;
+}
+
+@media (max-width: $lg-screen) {
+    h1 {
+        font-size: 5.6rem;
+    }
+    h2 {
+        font-size: 4.2rem;
+    }
+    h3 {
+        font-size: 2.8rem;
+    }
+    h4 {
+        font-size: 2.1rem;
+    }
+    h5 {
+        font-size: 1.8rem;
+    }
+    h6 {
+        font-size: 1.6rem;
+    }
+    .heading-primary {
+        font-size: 9.6rem;
+        line-height: 9.6rem;
+    }
+    .heading-secondary {
+        font-size: 7.2rem;
+        line-height: 7.2rem;
+    }
+    .heading-tertiary {
+        font-size: 3.6rem;
+        line-height: 4.8rem;
+    }
+}
+
+@media (max-width: $md-screen) {
+    h1 {
+        font-size: 4.8rem;
+    }
+    h2 {
+        font-size: 3.6rem;
+    }
+    h3 {
+        font-size: 2.4rem;
+    }
+    h4 {
+        font-size: 1.8rem;
+    }
+    h5 {
+        font-size: 1.6rem;
+    }
+    h6 {
+        font-size: 1.4rem;
+    }
+    .heading-primary {
+        font-size: 7.2rem;
+        line-height: 7.2rem;
+    }
+    .heading-secondary {
+        font-size: 5.4rem;
+        line-height: 5.4rem;
+    }
+    .heading-tertiary {
+        font-size: 2.7rem;
+        line-height: 3.6rem;
+    }
+    a,
+    .text-2,
+    .text-1 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: $sm-screen) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+    h5 {
+        font-size: 1.3rem;
+    }
+    h6 {
+        font-size: 1.2rem;
+    }
+    .heading-primary {
+        font-size: 6.4rem;
+        line-height: 6.4rem;
+    }
+    .heading-secondary {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+    }
+    .heading-tertiary {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    }
 }
